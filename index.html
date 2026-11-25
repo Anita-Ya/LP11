@@ -3621,7 +3621,7 @@ body {
         </div>
 
         <!-- Lead Form -->
-        <form id="lead-form" class="order-form-body" onsubmit="event.preventDefault(); handleFormSubmit();">
+        <form id="lead-form" class="order-form-body" autocomplete="off" onsubmit="event.preventDefault(); handleFormSubmit();">
           
           <!-- Field 1: Name -->
           <div class="form-group">
@@ -3631,11 +3631,15 @@ body {
               <input 
                 type="text" 
                 id="user-name" 
-                name="name" 
+                name="cust_name" 
                 class="form-input" 
                 placeholder="अपना पूरा नाम दर्ज करें।" 
                 required
-                autocomplete="name"
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="off"
+                spellcheck="false"
+                data-lpignore="true"
               >
             </div>
             <!-- Name Tooltip -->
@@ -3653,14 +3657,17 @@ body {
               <input 
                 type="tel" 
                 id="user-phone" 
-                name="phone" 
+                name="cust_phone" 
                 class="form-input" 
                 placeholder="अपना 10 अंकों का मोबाइल नंबर दर्ज करें।" 
                 pattern="[6-9][0-9]{9}"
                 maxlength="10" 
                 inputmode="numeric"
                 required
-                autocomplete="tel"
+                autocomplete="off"
+                autocorrect="off"
+                spellcheck="false"
+                data-lpignore="true"
                 title="मोबाइल नंबर केवल 6, 7, 8 या 9 से ही शुरू होना चाहिए"
               >
             </div>
