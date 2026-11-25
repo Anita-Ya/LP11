@@ -533,6 +533,492 @@
 
     </section>
 
+    <!-- Section 7: Quality & Transparency Certifications (गुणवत्ता और पारदर्शिता का भरोसा) -->
+    <section class="trust-section">
+      
+      <!-- Section Header -->
+      <div class="section-header">
+        <h2 class="section-title">गुणवत्ता और पारदर्शिता का भरोसा</h2>
+      </div>
+
+      <!-- 2x2 Certifications Grid -->
+      <div class="cert-grid">
+
+        <!-- Badge 1: GMP -->
+        <div class="cert-card">
+          <div class="cert-badge-wrap">
+            <img src="images/cert1.avif" alt="GMP Certified" class="cert-img" loading="lazy">
+          </div>
+          <h3 class="cert-title">GMP</h3>
+        </div>
+
+        <!-- Badge 2: ISO -->
+        <div class="cert-card">
+          <div class="cert-badge-wrap">
+            <img src="images/iso.avif" alt="ISO Certified" class="cert-img" loading="lazy">
+          </div>
+          <h3 class="cert-title">ISO</h3>
+        </div>
+
+        <!-- Badge 3: FSSAI -->
+        <div class="cert-card">
+          <div class="cert-badge-wrap">
+            <img src="images/cert3.avif" alt="FSSAI Approved" class="cert-img" loading="lazy">
+          </div>
+          <h3 class="cert-title">FSSAI</h3>
+        </div>
+
+        <!-- Badge 4: Testing -->
+        <div class="cert-card">
+          <div class="cert-badge-wrap">
+            <img src="images/cert4.avif" alt="Testing - Lab Tested" class="cert-img" loading="lazy">
+          </div>
+          <h3 class="cert-title">Testing</h3>
+        </div>
+
+      </div>
+
+      <!-- Bottom Quality Assurance Strip -->
+      <div class="trust-assurance-bar">
+        <div class="assurance-item">
+          <span class="assurance-icon">✓</span>
+          <span class="assurance-text">100% आयुर्वेदिक</span>
+        </div>
+        <div class="assurance-item">
+          <span class="assurance-icon">✓</span>
+          <span class="assurance-text">सुरक्षित व प्रामाणिक</span>
+        </div>
+        <div class="assurance-item">
+          <span class="assurance-icon">✓</span>
+          <span class="assurance-text">लैब टेस्टेड फॉर्मूला</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Section 8: Order Now & Information Form (Order Now - Slimax की जानकारी प्राप्त करें) -->
+    <section id="order-form" class="order-section">
+      
+      <!-- Section Header -->
+      <div class="section-header">
+        <h2 class="section-title">Order Now</h2>
+      </div>
+
+      <!-- Main Order Container Card -->
+      <div class="order-container-card">
+
+        <!-- Card Top Banner -->
+        <div class="order-header-box">
+          <h3 class="order-main-title">Slimax की जानकारी प्राप्त करें</h3>
+          <p class="order-helper-text">विशेष छूट और स्वास्थ्य सलाह के लिए अपना विवरण दर्ज करें</p>
+        </div>
+
+        <!-- Product Mini Spotlight Frame -->
+        <div class="order-product-strip">
+          <div class="mini-prod-img-box">
+            <img src="images/product.jpg" alt="Slimax Powder" class="mini-prod-img" loading="lazy">
+          </div>
+          <div class="mini-prod-info">
+            <span class="mini-prod-name">Slimax Powder</span>
+            <span class="mini-prod-badge">Cash on Delivery उपलब्ध</span>
+            <p class="mini-prod-desc">प्राकृतिक हर्बल वज़न प्रबंधन दिनचर्या</p>
+          </div>
+        </div>
+
+        <!-- Lead Form -->
+        <form id="lead-form" class="order-form-body" onsubmit="event.preventDefault(); handleFormSubmit();">
+          
+          <!-- Field 1: Name -->
+          <div class="form-group">
+            <label for="user-name" class="form-label">अपना नाम</label>
+            <div class="input-wrapper">
+              <span class="input-icon">👤</span>
+              <input 
+                type="text" 
+                id="user-name" 
+                name="name" 
+                class="form-input" 
+                placeholder="अपना पूरा नाम दर्ज करें।" 
+                required
+                autocomplete="name"
+              >
+            </div>
+            <!-- Name Tooltip -->
+            <div id="name-tooltip" class="input-tooltip" style="display: none;">
+              <span class="tooltip-icon">!</span>
+              <span class="tooltip-text">नाम में केवल अक्षर (Letters) ही दर्ज करें।</span>
+            </div>
+          </div>
+
+          <!-- Field 2: Phone -->
+          <div class="form-group">
+            <label for="user-phone" class="form-label">मोबाइल नंबर</label>
+            <div class="input-wrapper">
+              <span class="input-icon">📞</span>
+              <input 
+                type="tel" 
+                id="user-phone" 
+                name="phone" 
+                class="form-input" 
+                placeholder="अपना 10 अंकों का मोबाइल नंबर दर्ज करें।" 
+                pattern="[6-9][0-9]{9}"
+                maxlength="10" 
+                inputmode="numeric"
+                required
+                autocomplete="tel"
+                title="मोबाइल नंबर केवल 6, 7, 8 या 9 से ही शुरू होना चाहिए"
+              >
+            </div>
+            <!-- Phone Tooltip -->
+            <div id="phone-tooltip" class="input-tooltip" style="display: none;">
+              <span class="tooltip-icon">!</span>
+              <span class="tooltip-text">मोबाइल नंबर केवल 6, 7, 8 या 9 से ही शुरू होना चाहिए।</span>
+            </div>
+          </div>
+
+          <!-- Big CTA Button -->
+          <button type="submit" class="order-cta-btn" id="submit-btn">
+            <span class="cta-title">अभी जानकारी प्राप्त करें</span>
+            <span class="cta-sub">COD (कैश ऑन डिलीवरी) उपलब्ध</span>
+          </button>
+
+          <!-- Form Message Output -->
+          <div id="form-feedback" class="form-feedback" style="display: none;"></div>
+
+        </form>
+
+        <!-- Security & Trust Badges Strip -->
+        <div class="order-trust-strip">
+          <div class="trust-badge-item">
+            <span class="trust-item-icon">🔒</span>
+            <span class="trust-item-text">Secure Order</span>
+          </div>
+          <span class="trust-dot">·</span>
+          <div class="trust-badge-item">
+            <span class="trust-item-icon">🚚</span>
+            <span class="trust-item-text">Cash on Delivery</span>
+          </div>
+          <span class="trust-dot">·</span>
+          <div class="trust-badge-item">
+            <span class="trust-item-icon">ℹ️</span>
+            <span class="trust-item-text">Product Information</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Section 9: Customer Reviews (ग्राहकों के वास्तविक अनुभव) -->
+    <section class="reviews-section">
+      
+      <!-- Section Header -->
+      <div class="section-header">
+        <h2 class="section-title">ग्राहकों के वास्तविक अनुभव</h2>
+      </div>
+
+      <!-- Reviews Cards List -->
+      <div class="reviews-list">
+
+        <!-- Review Card 1: Rajesh Sharma -->
+        <div class="review-card">
+          <div class="quote-watermark">“</div>
+          <div class="reviewer-header">
+            <div class="reviewer-avatar-wrap">
+              <img src="images/r1.jpg" alt="राजेश शर्मा" class="reviewer-avatar" loading="lazy">
+            </div>
+            <div class="reviewer-info">
+              <div class="reviewer-name-row">
+                <h3 class="reviewer-name">राजेश शर्मा</h3>
+                <span class="verified-pill">✓ Verified</span>
+              </div>
+              <div class="reviewer-location">
+                <span class="loc-pin">📍</span> लखनऊ, उत्तर प्रदेश
+              </div>
+            </div>
+          </div>
+          <div class="rating-stars">★★★★★</div>
+          <p class="review-body">
+            "ऑफिस में दिनभर बैठे रहने से पेट भारी रहता था और वज़न लगातार बढ़ रहा था। Slimax Powder को अपनी दिनचर्या में शामिल करने के बाद से पाचन में बहुत सुधार हुआ है और शरीर में हल्कापन महसूस होता है। अब दिनभर ताजगी और ऊर्जा बनी रहती है।"
+          </p>
+        </div>
+
+        <!-- Review Card 2: Anjali Verma -->
+        <div class="review-card">
+          <div class="quote-watermark">“</div>
+          <div class="reviewer-header">
+            <div class="reviewer-avatar-wrap">
+              <img src="images/r2.jpg" alt="अंजलि वर्मा" class="reviewer-avatar" loading="lazy">
+            </div>
+            <div class="reviewer-info">
+              <div class="reviewer-name-row">
+                <h3 class="reviewer-name">अंजलि वर्मा</h3>
+                <span class="verified-pill">✓ Verified</span>
+              </div>
+              <div class="reviewer-location">
+                <span class="loc-pin">📍</span> पुणे, महाराष्ट्र
+              </div>
+            </div>
+          </div>
+          <div class="rating-stars">★★★★★</div>
+          <p class="review-body">
+            "अनियमित दिनचर्या और खानपान की वजह से वज़न लगातार बढ़ रहा था और पेट भारी रहता था। Slimax Powder लेने के बाद से पाचन में सुधार हुआ, सुस्ती दूर हुई और शरीर में हल्कापन महसूस होने लगा है। बहुत ही भरोसेमंद और असरदार आयुर्वेदिक उत्पाद!"
+          </p>
+        </div>
+
+        <!-- Review Card 3: Sunita Verma -->
+        <div class="review-card">
+          <div class="quote-watermark">“</div>
+          <div class="reviewer-header">
+            <div class="reviewer-avatar-wrap">
+              <img src="images/r3.jpg" alt="सुनीता वर्मा" class="reviewer-avatar" loading="lazy">
+            </div>
+            <div class="reviewer-info">
+              <div class="reviewer-name-row">
+                <h3 class="reviewer-name">सुनीता वर्मा</h3>
+                <span class="verified-pill">✓ Verified</span>
+              </div>
+              <div class="reviewer-location">
+                <span class="loc-pin">📍</span> जयपुर, राजस्थान
+              </div>
+            </div>
+          </div>
+          <div class="rating-stars">★★★★★</div>
+          <p class="review-body">
+            "वज़न बढ़ने के कारण पसंदीदा कपड़े पहनने में झिझक होती थी और जल्दी थकान महसूस होने लगती थी। Slimax Powder नियमित लेने से मुझे सकारात्मक बदलाव महसूस हुआ। पाचन दुरुस्त हुआ और खुद पर आत्मविश्वास वापस लौट आया। 100% प्राकृतिक और सुरक्षित!"
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Section 10: Frequently Asked Questions (FAQs) -->
+    <section class="faq-section" id="faq-section">
+      
+      <!-- Section Header -->
+      <div class="section-header">
+        <h2 class="section-title">FAQs (अक्सर पूछे जाने वाले सवाल)</h2>
+      </div>
+
+      <!-- FAQ Accordion List -->
+      <div class="faq-accordion" id="faqAccordion">
+
+        <!-- FAQ Item 1 -->
+        <div class="faq-item active">
+          <button type="button" class="faq-trigger" aria-expanded="true">
+            <span class="faq-num">1</span>
+            <span class="faq-question">Slimax क्या है?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-collapse">
+            <div class="faq-content">
+              <p>यह जड़ी-बूटियों पर आधारित आयुर्वेदिक पाउडर सप्लीमेंट है, जो पाचन और मेटाबॉलिज़्म को सहारा देने वाली वज़न-प्रबंधन दिनचर्या के लिए बनाया गया है।</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <span class="faq-num">2</span>
+            <span class="faq-question">SlimaX में कौन-सी जड़ी-बूटियाँ हैं?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-collapse">
+            <div class="faq-content">
+              <p>SlimaX की मुख्य सामग्री में गुग्गुल, त्रिफला, ग्रीन टी एक्सट्रैक्ट और पिप्पली शामिल हैं। पूरी सूची पैक पर देखें।</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <span class="faq-num">3</span>
+            <span class="faq-question">क्या SlimaX को रोज़ की रूटीन में शामिल करना आसान है?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-collapse">
+            <div class="faq-content">
+              <p>हाँ। इसे लेने का समय अपने नियमित भोजन से जोड़ सकते हैं। मात्रा और इस्तेमाल का तरीका पैक पर दिया गया है।</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <span class="faq-num">4</span>
+            <span class="faq-question">क्या SlimaX को अपनी मौजूदा डाइट और वॉक के साथ ले सकते हैं?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-collapse">
+            <div class="faq-content">
+              <p>SlimaX को संतुलित खानपान और नियमित एक्टिविटी वाली दिनचर्या के साथ शामिल करने के लिए बनाया गया है।</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <span class="faq-num">5</span>
+            <span class="faq-question">क्या SlimaX का भुगतान डिलीवरी पर कर सकते हैं?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-collapse">
+            <div class="faq-content">
+              <p>हाँ, जिन पिन कोड पर Cash on Delivery उपलब्ध है, वहाँ पार्सल मिलने पर भुगतान कर सकते हैं।</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Disclaimer Strip (Exact match to image) -->
+    <div class="disclaimer-strip">
+      <h5 class="disclaimer-title">Disclaimer</h5>
+      <p class="disclaimer-text">
+        SLIMAX is an Ayurvedic support product. Results may vary from person to person. It is not intended to diagnose, treat, cure, or prevent any disease. Consult a qualified healthcare professional before use if you have a medical condition or take medication.
+      </p>
+    </div>
+
+    <!-- Policy Links Bar under Disclaimer -->
+    <div class="policy-links-bar">
+      <a href="javascript:void(0)" class="policy-link" onclick="openPolicyModal('privacy')">Privacy Policy</a>
+      <a href="javascript:void(0)" class="policy-link" onclick="openPolicyModal('terms')">Terms & Conditions</a>
+      <a href="javascript:void(0)" class="policy-link" onclick="openPolicyModal('refund')">Refund and Cancellation</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span class="footer-logo">🌿 Slimax Powder</span>
+        <p class="footer-copyright">
+          © 2026 Slimax Powder. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Policy Modals -->
+    <!-- Modal 1: Privacy Policy -->
+    <div id="modal-privacy" class="policy-modal" onclick="closeAllPolicyModals(event)">
+      <div class="policy-modal-card" onclick="event.stopPropagation()">
+        <div class="policy-modal-header">
+          <h3 class="policy-modal-title">Privacy Policy</h3>
+          <button type="button" class="policy-modal-close" onclick="closeAllPolicyModals()" aria-label="Close">✕</button>
+        </div>
+        <div class="policy-modal-body">
+          <p class="policy-intro">We (SLIMAX) respect your privacy. This Policy explains how we collect, use and protect your data.</p>
+          
+          <h4 class="policy-heading">1. What information do we collect?</h4>
+          <p class="policy-para">Your name, mobile number, address, and PIN code are collected when filling out the order form.</p>
+          
+          <h4 class="policy-heading">2. Usage</h4>
+          <p class="policy-para">
+            For order process and delivery<br>
+            For order related communication<br>
+            For customer support
+          </p>
+          
+          <h4 class="policy-heading">3. Data security</h4>
+          <p class="policy-para">Your information is stored securely and is not sold to any third parties, except to delivery partners to fulfill orders.</p>
+          
+          <h4 class="policy-heading">4. Contact</h4>
+          <p class="policy-para">For any questions regarding privacy, please contact the number provided in the order form.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: Terms & Conditions -->
+    <div id="modal-terms" class="policy-modal" onclick="closeAllPolicyModals(event)">
+      <div class="policy-modal-card" onclick="event.stopPropagation()">
+        <div class="policy-modal-header">
+          <h3 class="policy-modal-title">Terms & Conditions</h3>
+          <button type="button" class="policy-modal-close" onclick="closeAllPolicyModals()" aria-label="Close">✕</button>
+        </div>
+        <div class="policy-modal-body">
+          <p class="policy-intro">By using this website, you agree to the following rules.</p>
+          
+          <h4 class="policy-heading">1. Product Information</h4>
+          <p class="policy-para">SLIMAX is an Ayurvedic support product. Results may vary from person to person, and it is not a substitute for treatment of any disease.</p>
+          
+          <h4 class="policy-heading">2. Order</h4>
+          <p class="policy-para">After confirming the order, the delivery timeline may vary depending on the location.</p>
+          
+          <h4 class="policy-heading">3. Price</h4>
+          <p class="policy-para">Prices and offers shown on the website may change from time to time.</p>
+          
+          <h4 class="policy-heading">4. Responsibility</h4>
+          <p class="policy-para">Consult a doctor before using the product, especially if you are pregnant, breastfeeding, or have a medical condition.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: Refund and Cancellation -->
+    <div id="modal-refund" class="policy-modal" onclick="closeAllPolicyModals(event)">
+      <div class="policy-modal-card" onclick="event.stopPropagation()">
+        <div class="policy-modal-header">
+          <h3 class="policy-modal-title">Refund & Cancellation Policy</h3>
+          <button type="button" class="policy-modal-close" onclick="closeAllPolicyModals()" aria-label="Close">✕</button>
+        </div>
+        <div class="policy-modal-body">
+          <h4 class="policy-heading">1. Order Cancellation</h4>
+          <p class="policy-para">Orders can be canceled before they are shipped. For cancellations, please contact the contact number provided in the order form.</p>
+          
+          <h4 class="policy-heading">2. Refund</h4>
+          <p class="policy-para">If you receive a damaged or wrong product, a replacement or refund will be processed if reported within 24-48 hours of delivery.</p>
+          
+          <h4 class="policy-heading">3. Refund Timeline</h4>
+          <p class="policy-para">Approved refunds are processed to the original payment method within 5-7 business days.</p>
+          
+          <h4 class="policy-heading">4. Non-Returnable</h4>
+          <p class="policy-para">For health and hygiene reasons, opened/used products cannot be returned, unless they are damaged or defective.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky Bottom Conversion Bar (पूरे पेज पर दिखने वाला स्टिकी बार) -->
+    <div class="sticky-bottom-bar" id="stickyBottomBar">
+      <div class="sticky-brand-info">
+        <div class="sticky-brand-title">
+          <span class="sticky-leaf">🌿</span>
+          <span class="sticky-name">Slimax Powder</span>
+        </div>
+        <p class="sticky-tagline">वज़न प्रबंधन के लिए Ayurvedic Herbal Support</p>
+      </div>
+
+      <a href="#order-form" class="sticky-order-btn">
+        <span class="sticky-thumb-circle">
+          <img src="images/product.jpg" alt="Slimax Powder" class="sticky-thumb-img">
+        </span>
+        <span class="sticky-btn-text">अभी Order करें ➔</span>
+      </a>
+    </div>
+
     <!-- Placeholder for Next Sections (Aage ke sections yaha aayenge) -->
     <main id="next-sections" class="content-sections">
       <!-- User can provide next sections here -->
